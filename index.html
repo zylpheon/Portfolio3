@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="h-screen w-screen bg-gradient-to-br from-blue-100 to-indigo-200 flex flex-col"
+  style="font-family: 'Montserrat', sans-serif;">
+  <div class="finisher-header h-screen w-screen flex flex-col" style="font-family: 'Montserrat', sans-serif;">
+    <header class="flex items-center justify-between px-8 py-6 w-full">
+      <div class="flex items-center">
+  <span class="text-4xl font-extrabold text-white tracking-wide valentino-underline">Valentino</span>
+      </div>
+      <div class="navbar-blur-container flex items-center justify-center px-6 py-2">
+        <nav class="flex space-x-8">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Skills</a>
+          <a href="#" class="nav-link">Projects</a>
+          <a href="#" class="nav-link">Contact</a>
+          <span class="nav-underline"></span>
+        </nav>
+      </div>
+      <div class="flex space-x-4">
+  <a href="https://instagram.com" target="_blank" title="Instagram" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="h-7 w-7"
+            alt="Instagram" style="filter: brightness(0) invert(1);">
+        </a>
+  <a href="https://facebook.com" target="_blank" title="Facebook" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="h-7 w-7"
+            alt="Facebook" style="filter: brightness(0) invert(1);">
+        </a>
+  <a href="https://linkedin.com" target="_blank" title="LinkedIn" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="h-7 w-7"
+            alt="LinkedIn" style="filter: brightness(0) invert(1);">
+        </a>
+  <a href="https://discord.com" target="_blank" title="Discord" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" class="h-7 w-7"
+            alt="Discord" style="filter: brightness(0) invert(1);">
+        </a>
+      </div>
+    </header>
+    <main class="flex flex-col items-center justify-center flex-1">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Welcome to My Portfolio!</h1>
+      <p class="text-lg md:text-xl text-white max-w-xl text-center">I am a passionate developer dedicated to building
+        creative and innovative solutions. Discover my works, experiences, and stories on this page.</p>
+    </main>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/navbar-underline.js"></script>
+    <script src="scripts/finisher-header.es5.min.js" type="text/javascript"></script>
+    <script src="scripts/finisher-header-light.js"></script>
+    <script src="scripts/theme-toggle.js"></script>
+    <footer class="w-full flex justify-center items-center py-4 mt-auto">
+      <div id="corner-circles"
+        style="position:fixed;left:24px;bottom:24px;z-index:900;display:flex;flex-direction:column;gap:16px;">
+        <div class="decor-circle"></div>
+        <div class="decor-circle"></div>
+        <div class="decor-circle"></div>
+        <div class="decor-circle"></div>
+      </div>
+      <span class="text-sm text-white opacity-80">&copy; 2025 Valentino. All rights reserved.</span>
+    </footer>
+</body>
+
+</html>
