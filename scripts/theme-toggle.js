@@ -1,23 +1,11 @@
 
 (function () {
-  function removeFinisherHeaderCanvas() {
-    document.querySelectorAll('canvas.finisher-header').forEach(el => el.remove());
-  }
-  function loadScript(src, callback) {
-    const script = document.createElement('script');
-    script.src = src;
-    script.onload = callback;
-    document.body.appendChild(script);
-  }
   let theme = localStorage.getItem('theme') || 'dark';
   function setTheme(newTheme) {
-    removeFinisherHeaderCanvas();
     if (newTheme === 'light') {
-      loadScript('scripts/finisher-header-light.js');
       document.body.classList.remove('theme-dark');
       document.body.classList.add('theme-light');
     } else {
-      loadScript('scripts/finisher-header-dark.js');
       document.body.classList.remove('theme-light');
       document.body.classList.add('theme-dark');
     }
