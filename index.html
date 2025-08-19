@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <link rel="icon" type="image/x-icon" href="images/V.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="main-bg h-screen w-screen flex flex-col" style="font-family: 'Montserrat', sans-serif;">
+  <div class="h-screen w-screen flex flex-col">
+    <header class="flex items-center justify-between px-8 py-6 w-full">
+      <div class="flex items-center">
+        <span class="text-4xl font-extrabold text-white tracking-wide valentino-underline">Valentino</span>
+      </div>
+      <div class="navbar-blur-container flex items-center justify-center px-6 py-2 hidden lg:flex">
+        <nav class="flex space-x-8">
+          <nav class="flex">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Skills</a>
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link nav-link-contact">Contact</a>
+            <span class="nav-underline"></span>
+          </nav>
+        </nav>
+      </div>
+      <div class="flex space-x-4 hidden lg:flex">
+        <a href="https://instagram.com" target="_blank" title="Instagram" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="h-7 w-7"
+            alt="Instagram" style="filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://facebook.com" target="_blank" title="Facebook" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="h-7 w-7"
+            alt="Facebook" style="filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="h-7 w-7"
+            alt="LinkedIn" style="filter: brightness(0) invert(1);">
+        </a>
+        <a href="https://discord.com" target="_blank" title="Discord" class="social-icon-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" class="h-7 w-7"
+            alt="Discord" style="filter: brightness(0) invert(1);">
+        </a>
+      </div>
+      <button id="hamburger-toggle"
+        class="md:hidden flex flex-col items-center justify-center w-10 h-10 focus:outline-none hamburger-fixed"
+        aria-label="Toggle navigation" style="position:fixed;top:24px;right:24px;z-index:10000;">
+        <span class="block w-7 h-0.5 bg-white mb-1 rounded transition-all"></span>
+        <span class="block w-7 h-0.5 bg-white mb-1 rounded transition-all"></span>
+        <span class="block w-7 h-0.5 bg-white rounded transition-all"></span>
+      </button>
+      <div id="nav-overlay"
+        class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center hidden transition-opacity duration-300"
+        style="z-index:9999;">
+        <nav class="flex flex-col space-y-8 text-center">
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Home</a>
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">About</a>
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Skills</a>
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Projects</a>
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex flex-col items-center justify-center flex-1">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center portfolio-welcome px-4 sm:px-6">Welcome to
+        My Portfolio!
+      </h1>
+      <p class="text-lg md:text-xl text-white max-w-xl text-center portfolio-desc px-4 sm:px-6">I am a passionate
+        developer dedicated
+        to building
+        creative and innovative solutions. Discover my works, experiences, and stories on this page.</p>
+    </main>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/navbar-underline.js"></script>
+    <script src="scripts/theme-toggle.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <div id="nav-overlay"
+      class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center hidden transition-opacity duration-300"
+      style="z-index:9999;">
+      <nav class="flex flex-col space-y-8 text-center">
+        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Home</a>
+        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">About</a>
+        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Skills</a>
+        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Projects</a>
+        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Contact</a>
+      </nav>
+    </div>
+    <footer class="w-full flex justify-center items-center py-4 mt-auto">
+      <div id="corner-circles" class="corner-circles-fixed"
+        style="position:fixed;left:24px;bottom:24px;z-index:900;display:flex;flex-direction:column;gap:16px;">
+        <button id="theme-toggle-btn" class="theme-toggle-fixed"
+          style="position:fixed;right:24px;bottom:24px;z-index:900;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.3s;">
+          <span id="theme-toggle-icon"></span>
+        </button>
+        <div class="decor-circle"></div>
+        <div class="decor-circle"></div>
+        <div class="decor-circle"></div>
+        <div class="decor-circle"></div>
+      </div>
+      <span class="text-sm text-white opacity-80 portfolio-footer">&copy; 2025 Valentino. All rights reserved.</span>
+    </footer>
+</body>
+
+</html>
