@@ -95,13 +95,18 @@ body {
 }
 
 @media (max-width: 430px) {
-  :root {
-    --base-font-size: 13px;
+  main {
+    padding-bottom: 48px;
+  }
+
+  main h1,
+  main p {
+    transform: none !important;
+    transition: none !important;
+    cursor: default !important;
   }
 }
 
-
-body,
 .theme-light,
 .theme-dark {
   transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
@@ -349,8 +354,7 @@ body.theme-dark.main-bg {
   margin-right: 2rem;
 }
 
-.nav-link:last-child {
-}
+.nav-link:last-child {}
 
 .nav-link-contact {
   margin-right: 0 !important;
