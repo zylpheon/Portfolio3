@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', function () {
     if (!nav) return;
     const links = nav.querySelectorAll('.nav-link');
     const underline = nav.querySelector('.nav-underline');
+    let activeIndex = 0; // 0: Home, 1: About, dst
+
     function moveUnderlineTo(el) {
         let left = el.offsetLeft;
         const style = window.getComputedStyle(el);
@@ -17,19 +19,30 @@ window.addEventListener('DOMContentLoaded', function () {
         }
         underline.style.background = color;
     }
-    let currentLink = links[0];
-    moveUnderlineTo(currentLink);
-    links.forEach(link => {
+
+    moveUnderlineTo(links[activeIndex]);
+    links.forEach((link, idx) => {
         link.addEventListener('mouseenter', e => {
-            currentLink = link;
             moveUnderlineTo(link);
+        });
+        link.addEventListener('mouseleave', e => {
+            moveUnderlineTo(links[activeIndex]);
         });
     });
     nav.addEventListener('mouseleave', () => {
-        currentLink = links[0];
-        moveUnderlineTo(links[0]);
+        moveUnderlineTo(links[activeIndex]);
     });
-    window.addEventListener('resize', () => moveUnderlineTo(currentLink));
-    const observer = new MutationObserver(() => moveUnderlineTo(currentLink));
+    window.addEventListener('resize', () => moveUnderlineTo(links[activeIndex]));
+    const observer = new MutationObserver(() => moveUnderlineTo(links[activeIndex]));
     observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    // Event untuk About dan Home agar underline menetap
+    document.addEventListener('aboutPageActive', function () {
+        activeIndex = 1; // About
+        moveUnderlineTo(links[activeIndex]);
+    });
+    document.addEventListener('homePageActive', function () {
+        activeIndex = 0; // Home
+        moveUnderlineTo(links[activeIndex]);
+    });
 });
