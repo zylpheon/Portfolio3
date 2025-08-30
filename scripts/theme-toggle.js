@@ -1,4 +1,3 @@
-
 (function () {
   let theme = localStorage.getItem('theme') || 'dark';
   function setTheme(newTheme) {

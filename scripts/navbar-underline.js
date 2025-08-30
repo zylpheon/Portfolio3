@@ -3,8 +3,7 @@ window.addEventListener('DOMContentLoaded', function () {
     if (!nav) return;
     const links = nav.querySelectorAll('.nav-link');
     const underline = nav.querySelector('.nav-underline');
-    let activeIndex = 0; // 0: Home, 1: About, dst
-
+    let activeIndex = 0;
     function moveUnderlineTo(el) {
         let left = el.offsetLeft;
         const style = window.getComputedStyle(el);
@@ -19,7 +18,6 @@ window.addEventListener('DOMContentLoaded', function () {
         }
         underline.style.background = color;
     }
-
     moveUnderlineTo(links[activeIndex]);
     links.forEach((link, idx) => {
         link.addEventListener('mouseenter', e => {
@@ -35,14 +33,16 @@ window.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', () => moveUnderlineTo(links[activeIndex]));
     const observer = new MutationObserver(() => moveUnderlineTo(links[activeIndex]));
     observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-
-    // Event untuk About dan Home agar underline menetap
+    document.addEventListener('homePageActive', function () {
+        activeIndex = 0; // Home
+        moveUnderlineTo(links[activeIndex]);
+    });
     document.addEventListener('aboutPageActive', function () {
         activeIndex = 1; // About
         moveUnderlineTo(links[activeIndex]);
     });
-    document.addEventListener('homePageActive', function () {
-        activeIndex = 0; // Home
+    document.addEventListener('skillsPageActive', function () {
+        activeIndex = 2; // Skills
         moveUnderlineTo(links[activeIndex]);
     });
 });

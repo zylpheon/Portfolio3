@@ -1,19 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Ambil nav-link About (nav utama)
   const aboutLink = document.querySelector('.navbar-blur-container .nav-link:nth-child(2)');
   const homeLink = document.querySelector('.navbar-blur-container .nav-link:nth-child(1)');
+  const skillsLink = document.querySelector('.navbar-blur-container .nav-link:nth-child(3)');
   const main = document.querySelector('main');
-
-  // Ambil nav-overlay-link (mobile)
   const overlayLinks = document.querySelectorAll('#nav-overlay .nav-overlay-link');
-
-  // Konten Home (default)
   const homeContent = `
     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center portfolio-welcome px-4 sm:px-6">Welcome to My Portfolio!</h1>
     <p class="text-lg md:text-xl text-white max-w-xl text-center portfolio-desc px-4 sm:px-6">I am a passionate developer dedicated to building creative and innovative solutions. Discover my works, experiences, and stories on this page.</p>
   `;
 
-  // Konten About dengan gambar me.jpg dan paragraph baru 
+  const skillsContent = `
+    <div class="skills-content flex flex-col items-center justify-center gap-10 px-4 sm:px-6">
+      <div class="flex flex-col items-center md:items-start w-full">
+        <h1 class="text-2xl md:text-3xl font-bold text-white mb-3 text-center md:text-left no-hover">Skills</h1>
+        <p class="text-base md:text-lg text-white max-w-xl text-center md:text-left no-hover mb-4">Berikut adalah beberapa skill utama yang saya miliki dan sedang saya kembangkan:</p>
+        <ul class="skills-list grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          <li class="skill-item bg-white bg-opacity-10 rounded-lg p-4 text-white text-center shadow-md">Frontend Development</li>
+          <li class="skill-item bg-white bg-opacity-10 rounded-lg p-4 text-white text-center shadow-md">Backend Development</li>
+          <li class="skill-item bg-white bg-opacity-10 rounded-lg p-4 text-white text-center shadow-md">IoT Development</li>
+          <li class="skill-item bg-white bg-opacity-10 rounded-lg p-4 text-white text-center shadow-md">Linux Management</li>
+          <li class="skill-item bg-white bg-opacity-10 rounded-lg p-4 text-white text-center shadow-md">Network Administration</li>
+          <li class="skill-item bg-white bg-opacity-10 rounded-lg p-4 text-white text-center shadow-md">Project Management</li>
+        </ul>
+      </div>
+    </div>
+  `;
   const aboutContent = `
     <div class="about-content flex flex-col md:flex-row items-center justify-center gap-10 px-4 sm:px-6">
       <img src="images/me.jpg" alt="Foto Saya" class="w-40 h-56 object-cover rounded-lg about-photo mb-4 md:mb-0" style="aspect-ratio:3/4;" />
@@ -23,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     </div>
   `;
-
   let isTransitioning = false;
   function fadeContent(newContent) {
     if (isTransitioning) return;
@@ -37,17 +47,22 @@ document.addEventListener('DOMContentLoaded', function () {
         main.style.opacity = '1';
         setTimeout(function () {
           isTransitioning = false;
-        }, 1000); // Delay 1 detik sebelum bisa pindah lagi
+        }, 1000);
       }, 20);
     }, 400);
   }
-
-  // Desktop nav
   if (aboutLink && main) {
     aboutLink.addEventListener('click', function (e) {
       e.preventDefault();
       fadeContent(aboutContent);
       document.dispatchEvent(new CustomEvent('aboutPageActive'));
+    });
+  }
+  if (skillsLink && main) {
+    skillsLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      fadeContent(skillsContent);
+      document.dispatchEvent(new CustomEvent('skillsPageActive'));
     });
   }
   if (homeLink && main) {
@@ -57,8 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.dispatchEvent(new CustomEvent('homePageActive'));
     });
   }
-
-  // Mobile nav overlay
   if (overlayLinks.length > 0 && main) {
     function closeOverlay() {
       const overlay = document.getElementById('nav-overlay');
@@ -84,9 +97,12 @@ document.addEventListener('DOMContentLoaded', function () {
       document.dispatchEvent(new CustomEvent('aboutPageActive'));
       closeOverlay();
     });
-    // Anda bisa menambahkan handler untuk Skills, Projects, Contact jika ingin konten dinamis juga
+    overlayLinks[2].addEventListener('click', function (e) {
+      e.preventDefault();
+      fadeContent(skillsContent);
+      document.dispatchEvent(new CustomEvent('skillsPageActive'));
+      closeOverlay();
+    });
   }
-
-  // Set opacity awal agar smooth saat reload
   main.style.opacity = '1';
 });

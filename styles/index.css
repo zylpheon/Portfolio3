@@ -1,4 +1,14 @@
-/* Box-shadow khusus gambar About yang mengikuti theme */
+.theme-dark .skills-list .skill-item {
+  background: #1C1C1C !important;
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-light .skills-list .skill-item {
+  background: #fafafa !important;
+  color: #111 !important;
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .about-photo {
   box-shadow:
     0 0 0 3px rgba(0, 0, 0, 0.13),
@@ -7,6 +17,23 @@
     0 0 20px 6px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s;
 }
+
+.about-content {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 32px;
+  gap: 40px;
+}
+
+@media (max-width: 780px) {
+  .about-content {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    gap: 0 !important;
+  }
+}
+
 .theme-dark .about-photo {
   box-shadow:
     0 0 0 3px rgba(255, 255, 255, 0.4),
@@ -14,6 +41,7 @@
     0 0 12px 3px rgba(255, 255, 255, 0.25),
     0 0 20px 6px rgba(255, 255, 255, 0.10);
 }
+
 .nav-overlay-link {
   opacity: 0;
   transform: translateY(-32px);
@@ -471,10 +499,12 @@ body {
     justify-content: center !important;
     text-align: center !important;
   }
-  .about-content > div {
+
+  .about-content>div {
     align-items: center !important;
     text-align: center !important;
   }
+
   .about-content h1,
   .about-content p {
     text-align: center !important;
