@@ -23,8 +23,10 @@
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">About</a>
             <a href="#" class="nav-link">Skills</a>
+            <a href="#" class="nav-link">Certificates</a>
             <a href="#" class="nav-link">Projects</a>
-            <a href="#" class="nav-link nav-link-contact">Contact</a>
+            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link nav-link-contact">Blog</a>
             <span class="nav-underline"></span>
           </nav>
         </nav>
@@ -61,42 +63,23 @@
           <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Home</a>
           <a href="#" class="nav-overlay-link text-3xl font-bold text-white">About</a>
           <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Skills</a>
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Certificates</a>
           <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Projects</a>
           <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Contact</a>
+          <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Blog</a>
         </nav>
       </div>
     </header>
     <main class="flex flex-col items-center justify-center flex-1">
-      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center portfolio-welcome px-4 sm:px-6">Welcome to
-        My Portfolio!
-      </h1>
-      <p class="text-lg md:text-xl text-white max-w-xl text-center portfolio-desc px-4 sm:px-6">Hello, welcome to my
-        personal website. I'm Tino, a student. I'm still learning, and this website is one of my projects. Thank you for
-        visiting my web!
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center px-4 sm:px-6">Welcome to
+        My Portfolio!</h1>
+      <p class="text-lg md:text-xl text-white max-w-xl text-center px-4 sm:px-6">I am a passionate
+        developer dedicated to building creative and innovative solutions. Discover my works, experiences, and stories
+        on this page.</p>
     </main>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/navbar-underline.js"></script>
-    <script src="scripts/theme-toggle.js"></script>
-    <script src="scripts/hamburger-menu.js"></script>
-    <div id="nav-overlay"
-      class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center hidden transition-opacity duration-300"
-      style="z-index:9999;">
-      <nav class="flex flex-col space-y-8 text-center">
-        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Home</a>
-        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">About</a>
-        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Skills</a>
-        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Projects</a>
-        <a href="#" class="nav-overlay-link text-3xl font-bold text-white">Contact</a>
-      </nav>
-    </div>
     <footer class="w-full flex justify-center items-center py-4 mt-auto">
       <div id="corner-circles" class="corner-circles-fixed"
         style="position:fixed;left:24px;bottom:24px;z-index:900;display:flex;flex-direction:column;gap:16px;">
-        <button id="theme-toggle-btn" class="theme-toggle-fixed"
-          style="position:fixed;right:24px;bottom:24px;z-index:900;display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:background 0.3s;">
-          <span id="theme-toggle-icon"></span>
-        </button>
         <div class="decor-circle"></div>
         <div class="decor-circle"></div>
         <div class="decor-circle"></div>
@@ -104,6 +87,12 @@
       </div>
       <span class="text-sm text-white opacity-80 portfolio-footer">&copy; 2025 Valentino. All rights reserved.</span>
     </footer>
+  </div>
 </body>
+<script src="scripts/contact-handler.js"></script>
+<script src="scripts/hamburger-menu.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/navbar-underline.js"></script>
+<script src="scripts/theme-toggle.js"></script>
 
 </html>

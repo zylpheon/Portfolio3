@@ -1,5 +1,5 @@
 (function () {
-  let theme = localStorage.getItem('theme') || 'dark';
+  let theme = 'dark';
   function setTheme(newTheme) {
     if (newTheme === 'light') {
       document.body.classList.remove('theme-dark');
@@ -9,7 +9,6 @@
       document.body.classList.add('theme-dark');
     }
     theme = newTheme;
-    localStorage.setItem('theme', newTheme);
   }
   const toggleBtn = document.createElement('button');
   toggleBtn.id = 'theme-toggle-btn';
