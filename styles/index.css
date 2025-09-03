@@ -538,3 +538,83 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
 }
+
+@media (max-width: 1325px) {
+  .social-icons-navbar {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1326px) {
+  .social-icons-navbar {
+    display: flex !important;
+  }
+
+  .social-links-contact {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1325px) {
+  .social-links-contact {
+    display: flex !important;
+  }
+}
+
+/* Responsive Decorative Circles */
+@media (max-width: 768px) {
+
+  .corner-circles-fixed,
+  #corner-circles {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .corner-circles-fixed,
+  #corner-circles {
+    display: flex !important;
+  }
+}
+
+/* Skills Modal Styles */
+.theme-dark .theme-modal {
+  background: #1a1a1a !important;
+  color: #fff !important;
+}
+
+.theme-dark .theme-modal h3 {
+  color: #fff !important;
+}
+
+.theme-dark .theme-modal p {
+  color: #ccc !important;
+}
+
+.theme-dark .theme-modal button {
+  color: #ccc !important;
+}
+
+.theme-dark .theme-modal button:hover {
+  color: #fff !important;
+}
+
+/* Certificate Items */
+.certificate-item img {
+  transition: transform 0.3s ease;
+}
+
+.certificate-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Skills Button Hover Effects */
+.skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-light .skill-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

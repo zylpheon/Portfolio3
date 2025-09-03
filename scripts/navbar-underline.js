@@ -66,12 +66,12 @@ window.addEventListener('DOMContentLoaded', function () {
         moveUnderlineTo(links[activeIndex]);
     });
 
-    document.addEventListener('contactPageActive', function () {
+    document.addEventListener('blogPageActive', function () {
         activeIndex = 5;
         moveUnderlineTo(links[activeIndex]);
     });
 
-    document.addEventListener('blogPageActive', function () {
+    document.addEventListener('contactPageActive', function () {
         activeIndex = 6;
         moveUnderlineTo(links[activeIndex]);
     });
