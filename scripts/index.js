@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       `;
   const aboutContent = `
         <div class="about-content flex flex-col md:flex-row items-center justify-center gap-10 px-4 sm:px-6">
-          <img src="images/me.jpg" alt="My Photo" class="w-40 h-56 object-cover rounded-lg about-photo mb-4 md:mb-0" style="aspect-ratio:3/4;" />
+          <img src="images/me.webp" alt="My Photo" class="w-40 h-56 object-cover rounded-lg about-photo mb-4 md:mb-0" style="aspect-ratio:3/4;" />
           <div class="flex flex-col items-center md:items-start">
             <h1 class="text-2xl md:text-3xl font-bold text-white mb-3 text-center md:text-left no-hover">About Me</h1>
             <p class="text-base md:text-lg text-white max-w-xl text-center md:text-left no-hover">Hello! My name is Valentino, and I am a student at Depok 2 Vocational High School in Yogyakarta, Indonesia. I am currently in class XII and specializing in technology. I also enjoy photography and creative design.</p>
@@ -49,42 +49,42 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="certificates-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
-            <img src="images/certificates/sertif1.jpg" alt="Certificate 1" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
+            <img src="images/certificates/sertif1.webp" alt="Certificate 1" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Web Development Certificate</h3>
           <p class="text-sm opacity-90 text-center">Completed comprehensive web development course covering HTML, CSS, and JavaScript fundamentals.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
-            <img src="images/certificates/sertif2.jpg" alt="Certificate 2" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
+            <img src="images/certificates/sertif2.webp" alt="Certificate 2" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Network Administration</h3>
           <p class="text-sm opacity-90 text-center">Professional certification in network configuration and administration fundamentals.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
-            <img src="images/certificates/sertif3.jpg" alt="Certificate 3" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
+            <img src="images/certificates/sertif3.webp" alt="Certificate 3" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">IoT Development</h3>
           <p class="text-sm opacity-90 text-center">Internet of Things development certification covering sensors and microcontroller programming.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
-            <img src="images/certificates/sertif4.jpg" alt="Certificate 4" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
+            <img src="images/certificates/sertif4.webp" alt="Certificate 4" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Linux System Administration</h3>
           <p class="text-sm opacity-90 text-center">Advanced Linux system administration and server management certification.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
-            <img src="images/certificates/sertif5.jpg" alt="Certificate 5" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
+            <img src="images/certificates/sertif5.webp" alt="Certificate 5" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Project Management</h3>
           <p class="text-sm opacity-90 text-center">Professional project management certification covering agile methodologies and team leadership.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
-            <img src="images/certificates/sertif6.jpg" alt="Certificate 6" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
+            <img src="images/certificates/sertif6.webp" alt="Certificate 6" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Database Management</h3>
           <p class="text-sm opacity-90 text-center">Database design and management certification including SQL and NoSQL databases.</p>
