@@ -54,70 +54,70 @@ document.addEventListener('DOMContentLoaded', function () {
             <img src="images/certificates/sertif10.webp" alt="Certificate 1" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Beginner Machine Learning</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned the fundamentals of machine learning, including classification, regression, clustering, feature engineering, and model optimization.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif9.webp" alt="Certificate 2" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Intermediate Web Development</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned to build responsive and accessible web applications with animations, media features, digital maps, background JavaScript, progressive web apps, and deployment strategies.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif8.webp" alt="Certificate 3" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Financial Literacy 101</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned the fundamentals of financial literacy, including daily money management, long-term financial planning, and basic investing, through the Coding Camp powered by DBS Foundation 2025.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif7.webp" alt="Certificate 4" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Python Basics</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned the basics of Python programming, including data handling, control flow, arrays, functions, OOP, unit testing, and popular libraries, using IDEs like VS Code, Jupyter Notebook, and Google Colab.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif6.webp" alt="Certificate 5" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Data Visualization Basics</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned to create effective data visualizations using Google Sheets by applying industry best practices through a beginner-friendly course in data processing.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif5.webp" alt="Certificate 6" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Fundamental Web Development</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned to build front-end web applications using advanced HTML forms, CSS grid, web components, module bundlers, and asynchronous JavaScript requests.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif4.webp" alt="Certificate 7" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">JavaScript Basics</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned the basics of JavaScript for web development with Node.js, including syntax, functions, data structures, OOP, functional programming, and asynchronous processes, through an AWS-validated course.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif3.webp" alt="Certificate 8" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Beginner Web Development</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned to build interactive front-end web applications with DOM manipulation, event handling, and web storage through an industry-standard course for Front-End Web Developers.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif2.webp" alt="Certificate 9" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">AI Basics</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned the basics of Artificial Intelligence, including data, Machine Learning, and Deep Learning, through a beginner-friendly course designed to build a career in AI.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif1.webp" alt="Certificate 10" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 5/7;">
           </div>
           <h3 class="font-semibold text-lg mb-2 text-center">Web Development Basics</h3>
-          <p class="text-sm opacity-90 text-center"></p>
+          <p class="text-sm opacity-90 text-center">I learned the basics of HTML and CSS as the three foundations of website development through a structured and comprehensive course verified by Dicoding experts.</p>
         </div>
       </div>
     </div>
