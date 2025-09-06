@@ -618,37 +618,42 @@ body {
 .certificates-grid-container {
   max-height: calc(100vh - 200px);
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .certificates-grid-container::-webkit-scrollbar {
-  width: 8px;
+  display: none;
 }
 
-.certificates-grid-container::-webkit-scrollbar-track {
-  background: transparent;
+.certificates-fade-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0));
+  pointer-events: none;
+  z-index: 10;
 }
 
-.certificates-grid-container::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+.certificates-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0));
+  pointer-events: none;
+  z-index: 10;
 }
 
-.certificates-grid-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+.theme-light .certificates-fade-top {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
-.theme-light .certificates-grid-container {
-  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
-}
-
-.theme-light .certificates-grid-container::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.theme-light .certificates-grid-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.5);
+.theme-light .certificates-fade-bottom {
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .social-icon-link {
