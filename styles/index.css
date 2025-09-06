@@ -561,7 +561,6 @@ body {
   }
 }
 
-/* Responsive Decorative Circles */
 @media (max-width: 768px) {
 
   .corner-circles-fixed,
@@ -578,7 +577,6 @@ body {
   }
 }
 
-/* Skills Modal Styles */
 .theme-dark .theme-modal {
   background: #1a1a1a !important;
   color: #fff !important;
@@ -600,7 +598,6 @@ body {
   color: #fff !important;
 }
 
-/* Certificate Items */
 .certificate-item img {
   transition: transform 0.3s ease;
 }
@@ -609,7 +606,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Skills Button Hover Effects */
 .skill-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -617,4 +613,159 @@ body {
 
 .theme-light .skill-item:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-grid-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.certificates-grid-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.certificates-grid-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.certificates-grid-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.certificates-grid-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.theme-light .certificates-grid-container {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.theme-light .certificates-grid-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.theme-light .certificates-grid-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.social-icon-link {
+  transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+  transform: translateY(-2px);
+}
+
+.valentino-underline {
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.decor-circle {
+  transition: all 0.3s ease;
+}
+
+.decor-circle:hover {
+  transform: scale(1.1);
+}
+
+#theme-toggle-btn {
+  transition: all 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.skill-item {
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.theme-light .skill-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item {
+  transition: all 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.theme-light .certificate-item:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.project-item {
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.theme-light .project-item:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+#skillModal {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#skillModal.hidden {
+  animation: fadeOut 0.3s ease;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.theme-dark #modalIcons span {
+  color: #fff !important;
+}
+
+.theme-light #modalIcons span {
+  color: #111 !important;
+}
+
+#modalIcons span svg {
+  fill: currentColor;
 }
