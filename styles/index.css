@@ -620,6 +620,7 @@ body {
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  position: relative;
 }
 
 .certificates-grid-container::-webkit-scrollbar {
@@ -627,7 +628,7 @@ body {
 }
 
 .certificates-fade-top {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -635,14 +636,15 @@ body {
   background: linear-gradient(to bottom, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0));
   pointer-events: none;
   z-index: 10;
+  margin-bottom: -40px;
 }
 
 .certificates-fade-bottom {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 20px;
   background: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0));
   pointer-events: none;
   z-index: 10;
@@ -654,6 +656,10 @@ body {
 
 .theme-light .certificates-fade-bottom {
   background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.certificates-grid {
+  padding: 10px 0 110px 0;
 }
 
 .social-icon-link {
@@ -773,4 +779,12 @@ body {
 
 #modalIcons span svg {
   fill: currentColor;
+}
+
+.theme-light #modalIcons span img {
+  filter: none !important;
+}
+
+.theme-dark #modalIcons span img {
+  filter: invert(1) !important;
 }

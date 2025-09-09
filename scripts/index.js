@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 `;
   const certificatesContent = `
-  <div class="certificates-content flex flex-col items-center justify-center gap-6 px-4 sm:px-6 max-w-6xl mx-auto h-full">
+  <div class="certificates-content flex flex-col items-center justify-center gap-6 px-4 sm:px-6 max-w-6xl mx-auto h-full py-8">
     <div class="flex flex-col items-center w-full flex-shrink-0">
       <h1 class="text-2xl md:text-3xl font-bold text-white mb-3 text-center no-hover">Certificates</h1>
       <p class="text-base md:text-lg text-white max-w-xl text-center no-hover mb-4">Professional certifications and achievements that showcase my expertise and commitment to continuous learning.</p>
     </div>
     <div class="certificates-grid-container w-full flex-1 relative">
       <div class="certificates-fade-top"></div>
-      <div class="certificates-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full pb-24">
+      <div class="certificates-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
           <div class="mb-4">
             <img src="images/certificates/sertif10.webp" alt="Certificate 1" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 1.4142;">
@@ -114,11 +114,11 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="text-sm opacity-90 text-center">I learned the basics of Artificial Intelligence, including data, Machine Learning, and Deep Learning, through a beginner-friendly course designed to build a career in AI.</p>
         </div>
         <div class="certificate-item bg-white bg-opacity-10 rounded-lg p-4 text-white shadow-md">
-          <div class="mb-4">
-            <img src="images/certificates/sertif1.webp" alt="Certificate 10" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 1.4142;">
-          </div>
-          <h3 class="font-semibold text-lg mb-2 text-center">Web Development Basics</h3>
-          <p class="text-sm opacity-90 text-center">I learned the basics of HTML and CSS as the three foundations of website development through a structured and comprehensive course verified by Dicoding experts.</p>
+         <div class="mb-4">
+           <img src="images/certificates/sertif10.webp" alt="Certificate 1" class="w-full h-48 object-cover rounded-lg" style="aspect-ratio: 1.4142;">
+         </div>
+          <h3 class="font-semibold text-lg mb-2 text-center">Beginner Machine Learning</h3>
+         <p class="text-sm opacity-90 text-center">I learned the fundamentals of machine learning, including classification, regression, clustering, feature engineering, and model optimization.</p>
         </div>
       </div>
       <div class="certificates-fade-bottom"></div>
@@ -136,10 +136,10 @@ document.addEventListener('DOMContentLoaded', function () {
                   <div class="w-full h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">Portfolio</div>
                 </div>
                 <h3 class="font-semibold text-lg mb-2">Personal Portfolio Website</h3>
-                <p class="text-sm opacity-90 mb-4">A responsive portfolio website built with HTML, CSS, and JavaScript featuring dark/light theme toggle and smooth animations.</p>
+                <p class="text-sm opacity-90 mb-4">A responsive portfolio website built with HTML, Tailwind CSS, and JavaScript featuring dark/light theme toggle and smooth animations.</p>
                 <div class="flex flex-wrap gap-2">
                   <span class="px-2 py-1 bg-blue-500 text-xs rounded">HTML</span>
-                  <span class="px-2 py-1 bg-green-500 text-xs rounded">CSS</span>
+                  <span class="px-2 py-1 bg-green-500 text-xs rounded">Tailwind CSS</span>
                   <span class="px-2 py-1 bg-yellow-500 text-xs rounded">JavaScript</span>
                 </div>
               </div>
@@ -354,7 +354,7 @@ document.addEventListener('click', function (e) {
 document.addEventListener('DOMContentLoaded', function () {
   const closeModalBtn = document.getElementById('closeModal');
   const skillModal = document.getElementById('skillModal');
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', function (e) {
     if (e.target && e.target.id === 'closeModal') {
       const modal = document.getElementById('skillModal');
       if (modal) {
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', function (e) {
     const modal = document.getElementById('skillModal');
     if (e.target === modal) {
       modal.classList.add('hidden');
@@ -380,32 +380,32 @@ function showSkillModal(skill) {
     frontend: {
       title: 'Frontend Development',
       description: 'Frontend Development is centered on crafting interactive, visually appealing user interfaces that provide a seamless user experience. By leveraging modern frameworks, responsive design techniques, and advanced styling tools, I create dynamic and accessible web applications that effectively bridge user needs with engaging digital interactions.',
-      icons: ['html5', 'css3', 'javascript', 'react', 'vue', 'bootstrap']
+      icons: ['html5', 'css3', 'javascript', 'react', 'vue', 'bootstrap', 'tailwind']
     },
     backend: {
       title: 'Backend Development',
       description: 'Backend Development involves architecting robust server-side solutions that power dynamic web applications. I specialize in building scalable and secure systems, integrating reliable databases, and developing comprehensive APIs to ensure efficient data management and seamless communication between clients and servers.',
-      icons: ['nodejs', 'php', 'python', 'mysql', 'mongodb', 'express']
+      icons: ['nodejs', 'php', 'mysql', 'mariadb', 'express']
     },
     iot: {
       title: 'IoT Development',
       description: 'IoT Development focuses on integrating smart devices into cohesive networks that drive automation and connectivity. I design and implement IoT solutions that harness sensor data, leverage real-time processing, and facilitate secure communication protocols, enabling efficient monitoring, control, and analytics across various environments.',
-      icons: ['arduino', 'raspberry-pi', 'c-plusplus', 'python', 'wifi', 'bluetooth']
+      icons: ['arduino', 'c-plusplus', 'python', 'bluetooth', 'mqtt']
     },
     linux: {
       title: 'Linux Management',
       description: 'Linux Management entails overseeing server infrastructures to ensure reliability, performance, and security. My expertise in Linux administration involves configuring systems, managing updates and patches, and optimizing environments for high availability, which collectively contribute to the stability and efficiency of enterprise-level operations.',
-      icons: ['ubuntu', 'centos', 'debian', 'terminal', 'docker', 'nginx']
+      icons: ['ubuntu', 'centos', 'debian', 'fedora', 'docker', 'nginx', 'apache']
     },
     network: {
       title: 'Network Administration',
       description: 'Network Administration is dedicated to maintaining and optimizing the connectivity that underpins modern IT infrastructures. I manage network configurations, monitor performance, and implement robust security protocols to guarantee uninterrupted data flow and secure communication across organizational networks.',
-      icons: ['cisco', 'router', 'switch', 'firewall', 'vpn', 'tcp-ip']
+      icons: ['cisco', 'mikrotik']
     },
     project: {
       title: 'Project Management',
       description: 'Project Management is the strategic discipline of planning, executing, and delivering projects on time and within budget. With a focus on aligning technical initiatives with business goals, I lead cross-functional teams, streamline communication, and manage resources effectively, ensuring that projects are executed with precision and quality.',
-      icons: ['scrum', 'agile', 'git', 'github', 'trello', 'slack']
+      icons: ['git', 'github']
     }
   };
   const data = skillData[skill];
@@ -413,11 +413,44 @@ function showSkillModal(skill) {
   description.textContent = data.description;
   const isDarkTheme = document.body.classList.contains('theme-dark');
   const iconColor = isDarkTheme ? 'text-white' : 'text-black';
+  const getIconHtml = (iconName) => {
+    const iconMap = {
+      'html5': '<i class="fab fa-html5"></i>',
+      'css3': '<i class="fab fa-css3-alt"></i>',
+      'javascript': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" style="width:16px;height:16px;filter:invert(1);" alt="JavaScript">',
+      'react': '<i class="fab fa-react"></i>',
+      'vue': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vuedotjs.svg" style="width:16px;height:16px;filter:invert(1);" alt="Vue.js">',
+      'bootstrap': '<i class="fab fa-bootstrap"></i>',
+      'tailwind': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tailwindcss.svg" style="width:16px;height:16px;filter:invert(1);" alt="Tailwind CSS">',
+      'nodejs': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nodedotjs.svg" style="width:16px;height:16px;filter:invert(1);" alt="Node.js">',
+      'php': '<i class="fab fa-php"></i>',
+      'mysql': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" style="width:16px;height:16px;filter:invert(1);" alt="MySQL">',
+      'mariadb': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mariadb.svg" style="width:16px;height:16px;filter:invert(1);" alt="MariaDB">',
+      'express': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/express.svg" style="width:16px;height:16px;filter:invert(1);" alt="Express">',
+      'arduino': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/arduino.svg" style="width:16px;height:16px;filter:invert(1);" alt="Arduino">',
+      'c-plusplus': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cplusplus.svg" style="width:16px;height:16px;filter:invert(1);" alt="C++">',
+      'python': '<i class="fab fa-python"></i>',
+      'bluetooth': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/bluetooth.svg" style="width:16px;height:16px;filter:invert(1);" alt="Bluetooth">',
+      'mqtt': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mqtt.svg" style="width:16px;height:16px;filter:invert(1);" alt="MQTT">',
+      'ubuntu': '<i class="fab fa-ubuntu"></i>',
+      'centos': '<i class="fab fa-centos"></i>',
+      'debian': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/debian.svg" style="width:16px;height:16px;filter:invert(1);" alt="Debian">',
+      'fedora': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/fedora.svg" style="width:16px;height:16px;filter:invert(1);" alt="Fedora">',
+      'docker': '<i class="fab fa-docker"></i>',
+      'nginx': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/nginx.svg" style="width:16px;height:16px;filter:invert(1);" alt="Nginx">',
+      'apache': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/apache.svg" style="width:16px;height:16px;filter:invert(1);" alt="Apache">',
+      'cisco': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cisco.svg" style="width:16px;height:16px;filter:invert(1);" alt="Cisco">',
+      'mikrotik': '<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mikrotik.svg" style="width:16px;height:16px;filter:invert(1);" alt="MikroTik">',
+      'git': '<i class="fab fa-git-alt"></i>',
+      'github': '<i class="fab fa-github"></i>',
+    };
+    return iconMap[iconName] || `<i class="fas fa-code"></i>`;
+  };
   icons.innerHTML = data.icons.map(icon =>
     `<span class="px-3 py-2 bg-blue-500 ${iconColor} text-sm rounded-full flex items-center gap-2">
-      <i class="fab fa-${icon} ${iconColor}"></i>
-      ${icon.charAt(0).toUpperCase() + icon.slice(1).replace('-', ' ')}
-    </span>`
+    ${getIconHtml(icon)}
+    ${icon.charAt(0).toUpperCase() + icon.slice(1).replace('-', ' ')}
+  </span>`
   ).join('');
   modal.classList.remove('hidden');
   modal.classList.add('flex');
